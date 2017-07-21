@@ -1,5 +1,4 @@
-val x = 34;
-val y = 17;
-val z = x + y;
-val f = 100 div 10;
+fun swap (pr : int*int) =
+    (#2 pr, #1 pr)
 
+swap (100, 200);

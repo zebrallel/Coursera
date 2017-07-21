@@ -24,4 +24,22 @@
   1. Before the variable binding "finishes"
   2. Afterwards, the expression producing the value is irrelevant
 
+## Expression
 
+  i.e:
+    24 true false x e1+e2
+    if e1 then e2 else e3
+
+  Every kind of expression has:
+  
+  1. Syntax (Syntax error)
+  2. Type-checking rules
+    1. Produces a type or fails (with a bad error message)
+    2. Types so far: int bool unit
+  3. Evaluation rules
+    1. Produces a value (or exception or infinite loop)
+
+## Function definitions
+
+  fun functionName ( argsName : argsType, [...]) = 
+    <Expression>
